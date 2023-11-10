@@ -10,4 +10,4 @@ Aqui você pode ter acesso a outros projetos que desenvolvi na faculdade, antes 
 
 ⚡ [Calculadora de IMC](https://github.com/Fisaq/imc-calculator)
 
-⚡ [Currículo Responsivo](https://github.com/Fisaq/imc-calculator)
+⚡ [Currículo Responsivo](https://github.com/Fisaq/curriculo-responsivo)
