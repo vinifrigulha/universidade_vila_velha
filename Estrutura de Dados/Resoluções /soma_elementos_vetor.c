@@ -1,5 +1,8 @@
 //Crie um programa que leia 10 números inteiros do usuário e armazene-os em um vetor. Em seguida, exiba a soma de todos os elementos do vetor.
 
+#include <stdio.h>
+#include <stdlib.h>
+
 int somaVetor(int num){
   
   int vetor[10];
