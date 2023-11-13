@@ -1,5 +1,8 @@
 // Crie um programa que leia um vetor de 10 elementos inteiros e verifique quantos números são maiores do que 50.
 
+#include <stdio.h>
+#include <stdlib.h>
+
 int verifica50(int vetor[]){
 
   for(int c = 0; c < 10; c++){
