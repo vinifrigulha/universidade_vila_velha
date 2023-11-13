@@ -2,6 +2,9 @@
 // seguida, crie um terceiro vetor C, onde cada elemento seja a soma dos
 // elementos correspondentes dos vetores A e B. Exiba o vetor C na tela.
 
+#include <stdio.h>
+#include <stdlib.h>
+
 int somaVetores(int vetorA[], int vetorB[]) {
 
   // Lendo o vetor A
