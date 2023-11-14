@@ -35,7 +35,7 @@ int substituirNegativos(int vetor[]){
   return 0;
 }
 
-int ex08(){
+int main(){
 
   int vetor[3];
   substituirNegativos(vetor);
