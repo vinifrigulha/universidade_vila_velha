@@ -49,12 +49,12 @@ class PessoaJuridica implements PessoaInter{
   validarDados = (): boolean => {
     if (this.cnpj.length !== 9)
     {
-      console.error("Este CNPJ não é válido.");
+      alert("Este CNPJ não é válido.");
       return false;
     }
     else
     {
-      console.log("CNPJ válido!")
+      alert("CNPJ válido!")
       return true;
     }
   }
@@ -69,26 +69,61 @@ class ContaCorrente{
     this.saldo = saldo;
   }
 
-  adicionarCorrentistaPF = (novo_correntPF: PessoaInter) : void =>{
-    this.correntista = novo_correntPF;
+  adicionarCorrentistaPF = (novo_correntPF: PessoaInter): ContaCorrente =>{
+    return new ContaCorrente(novo_correntPF, this.saldo);
   }
 
-  adicionarCorrentistaPJ = (novo_correntPJ: PessoaInter) : void =>{
-    this.correntista = novo_correntPJ;
+  adicionarCorrentistaPJ = (novo_correntPJ: PessoaInter): ContaCorrente =>{
+    return new ContaCorrente(novo_correntPJ, this.saldo);
   }
 
   imprimirDadosPF = () : string =>{
-    return
+
+    if (this.correntista instanceof PessoaFisica){
+      alert(`
+      Dados correntista:\n
+      \nNome: ${this.correntista.nome}
+      \nSobrenome: ${this.correntista.sobrenome}
+      \nCPF: ${this.correntista.cpf}
+      \nSaldo: ${this.saldo}`
+      );
+    }
+    else{
+      return `Tipo de correntista inválido para imprimir dados de Pessoa Física`;
+    }
+  
   }
 
   imprimirDadosPJ = () : string =>{
-    return
+     if (this.correntista instanceof PessoaJuridica){
+      alert(`
+      Dados correntista:\n
+      \nNome: ${this.correntista.nome}
+      \nSobrenome: ${this.correntista.sobrenome}
+      \nCPF: ${this.correntista.cnpj}
+      \nCrédito: ${this.correntista.credito}
+      \nSaldo: ${this.saldo}`
+      );
+    }
+    else{
+      return `Tipo de correntista inválido para imprimir dados de Pessoa Jurídica`;
+    }
   }
 }
 
 const Main = () : void =>{
-  let clientePF = new PessoaFisica("Isaque","Ferreira","00190787665");
-  clientePF.validarDados();
+
+    let clientePF = new PessoaFisica("Isaque","Ferreira","00190787665");
+    clientePF.validarDados();
+
+    if(clientePF.validarDados() == true){
+      let contaPF = new ContaCorrente(clientePF, 1000);
+      contaPF.imprimirDadosPF();
+    }
+    else{
+      alert("Infelizmente não foi possível criar a conta de Pessoa Física");
+    }
+
 }
 
 Main();
