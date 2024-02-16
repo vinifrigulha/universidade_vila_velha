@@ -80,13 +80,12 @@ class ContaCorrente{
   imprimirDadosPF = () : string =>{
 
     if (this.correntista instanceof PessoaFisica){
-      alert(`
+      return `
       Dados correntista:\n
       \nNome: ${this.correntista.nome}
       \nSobrenome: ${this.correntista.sobrenome}
       \nCPF: ${this.correntista.cpf}
-      \nSaldo: ${this.saldo}`
-      );
+      \nSaldo: ${this.saldo}`;
     }
     else{
       return `Tipo de correntista inválido para imprimir dados de Pessoa Física`;
@@ -96,14 +95,13 @@ class ContaCorrente{
 
   imprimirDadosPJ = () : string =>{
      if (this.correntista instanceof PessoaJuridica){
-      alert(`
+      return`
       Dados correntista:\n
       \nNome: ${this.correntista.nome}
       \nSobrenome: ${this.correntista.sobrenome}
       \nCPF: ${this.correntista.cnpj}
       \nCrédito: ${this.correntista.credito}
-      \nSaldo: ${this.saldo}`
-      );
+      \nSaldo: ${this.saldo}`;
     }
     else{
       return `Tipo de correntista inválido para imprimir dados de Pessoa Jurídica`;
@@ -118,7 +116,7 @@ const Main = () : void =>{
 
     if(clientePF.validarDados() == true){
       let contaPF = new ContaCorrente(clientePF, 1000);
-      contaPF.imprimirDadosPF();
+      alert(contaPF.imprimirDadosPF());
     }
     else{
       alert("Infelizmente não foi possível criar a conta de Pessoa Física");
