@@ -40,7 +40,17 @@
 * CT02: [Edge]: [Portal acessado com sucesso]
 * CT03: [Chrome]: [Portal acessado com sucesso]
 
-**OBS:** Funciona corretamente nos navegadores mais famosos, não foi feito testes em navegadores menos usuais.
+## RNF02: Responsividade do site
+
+### Cenário de Teste 01: Testar em aparelhos diferentes
+
+* CT01: [Desktop]: [Os elementos estão distribuídos adequadamente]
+* CT02: [Iphone SE]: [O site não tem uma boa responsividade, estando os elementos distribuídos de uma má forma]
+* CT03: [Samsung Galaxy S20 Ultra]: [Verticalmente há uma boa distribuição dos elementos, mas não funciona bem na horizontal]
+* CT04: [Iphone 14 Pro Max]: [Verticalmente há uma boa distribuição dos elementos, mas não funciona bem na horizontal]
+* CT05: [Ipad Pro]: [Os elementos estão distribuídos adequadamente]
+
+**OBS:** A responsividade funciona bem em dispositivos mais largos, como o Ipad e em telas de desktop, porém não possui uma boa distribuição dos elementos em celulares menores horizontalmente.
 
 # 3 - Componentes:
 
