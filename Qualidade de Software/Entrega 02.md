@@ -1,3 +1,5 @@
+<img src="https://scontent.fvix13-1.fna.fbcdn.net/v/t39.30808-6/348421471_255630477129615_7136019272536144796_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=5f2048&_nc_ohc=eJ3nXFlbMB0Q7kNvgEuPY0N&_nc_ht=scontent.fvix13-1.fna&oh=00_AYD1WQ3FBbBQlMEJ_0dkZ_qxmzodRHxJrH04i2_Lq4r-0w&oe=664DACEC" width=500>
+
 # 1 - Requisitos Funcionais (RF):
 
 ## RF01: Fazer Pedido
