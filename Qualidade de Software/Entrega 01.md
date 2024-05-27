@@ -35,6 +35,126 @@ Foram realizados testes durante o dia e à noite, nos quais itens do menu foram 
 
 Nos testes noturnos, foi observado que a adição de complementos aos pedidos atualiza o subtotal apenas no botão final "Fazer pedido". Esta falta de atualização em tempo real pode causar uma falta de transparência, dificultando a experiência do cliente ao não fornecer informações claras sobre o custo total do pedido à medida que ele é montado.
 
+<br/>
+<table>
+    <tr>
+        <th>
+            Objetivo:
+        </th>
+        <th colspan="4">
+            Testar Funcionamento do sistema ao adicionar itens ao carrinho
+        </th>
+    </tr>
+    <tr>
+        <th>
+            Método de Execução:
+        </th>
+        <th colspan="2">
+            Manual (x) 
+        </th>
+        <th colspan="2">
+            Automática ( ) 
+        </th>
+    </tr>
+    <tr>
+        <th>
+            Técnica:
+        </th>
+        <th colspan="2">
+            Teste Estrutural ( )
+        </th>
+        <th colspan="2">
+            Teste Funcional (x)
+        </th>
+    </tr>
+    <tr>
+        <th>
+            Nível de Teste:
+        </th>
+        <th>
+            Integração ( )
+        </th>
+        <th>
+            Sistema ( )
+        </th>
+        <th>
+            Unidade (x)
+        </th>
+    </tr>
+    <tr>
+        <th>
+            Responsável:
+        </th>
+        <th colspan="4">
+            Isaque Ferreira
+        </th>
+    </tr>
+</table>
+
 ### 3.2 Analisar o funcionamento da barra de pesquisas (REQ-2)
 
+Durante o processo de testagem da barra de pesquisa, a mesma forneceu informações úteis em seu estado vazio, indicando que era possível buscar produtos por nome ou descrição. Seguindo essas sugestões, realizei testes e constatei que a pesquisa filtra os resultados perfeitamente, incluindo valores numéricos referentes ao peso da carne.
 
+No entanto, ao pesquisar por itens não mencionados explicitamente na descrição do pedido, como "porções", "refrigerantes", "bebidas", "franguinhos" e "lanche", esses itens não eram filtrados, apesar de estarem presentes no cardápio. Esta limitação na funcionalidade da barra de pesquisa torna o processo de encontrar itens específicos mais lento e difícil para o usuário, que precisa saber exatamente o nome do prato para localizar o que deseja.
+
+<br/>
+<table>
+    <tr>
+        <th>
+            Objetivo:
+        </th>
+        <th colspan="4">
+            Testar Funcionamento da Barra de Pesquisas
+        </th>
+    </tr>
+    <tr>
+        <th>
+            Método de Execução:
+        </th>
+        <th colspan="2">
+            Manual (x) 
+        </th>
+        <th colspan="2">
+            Automática ( ) 
+        </th>
+    </tr>
+    <tr>
+        <th>
+            Técnica:
+        </th>
+        <th colspan="2">
+            Teste Estrutural ( )
+        </th>
+        <th colspan="2">
+            Teste Funcional (x)
+        </th>
+    </tr>
+    <tr>
+        <th>
+            Nível de Teste:
+        </th>
+        <th>
+            Integração ( )
+        </th>
+        <th>
+            Sistema ( )
+        </th>
+        <th>
+            Unidade (x)
+        </th>
+    </tr>
+    <tr>
+        <th>
+            Responsável:
+        </th>
+        <th colspan="4">
+            Isaque Ferreira
+        </th>
+    </tr>
+</table>
+
+### 3.3 Analisar a funcionalidade do Cadastro de Endereço
+
+O mecanismo de cadastrar endereços do site é bem intolerante a falhas, sendo a maioria dos seus campos implementados como uma lista-suspensa, diminuindo a possibilidade do usuário entrar com algum dado incorreto ou indevido. O botão de cadastrar endereço funciona corretamente e fornece a oportunidade de cadastrar vários endereços
+
+#
