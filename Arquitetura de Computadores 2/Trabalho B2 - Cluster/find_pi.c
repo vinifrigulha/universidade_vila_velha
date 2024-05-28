@@ -1,32 +1,39 @@
-#include <mpi.h>
 #include <stdio.h>
+#include <stdlib.h>
+#include <math.h>
+#include <mpi.h>
 
-int main(int argc, char** argv) {
+int main(int argc, char *argv[]) {
+    int n, myid, numprocs, i;
+    double PI25DT = 3.141592653589793238462643;
+    double mypi, pi, h, sum, x;
 
-    // Inicializa o ambiente MPI (não precisamos dos argumentos de linha de comando
-    // nesse exemplo simples:
-    MPI_Init(NULL, NULL);
+    MPI_Init(&argc, &argv);
+    MPI_Comm_size(MPI_COMM_WORLD, &numprocs);
+    MPI_Comm_rank(MPI_COMM_WORLD, &myid);
 
-    // Obtém o número de processos:
-    int nprocs = 0;
-    MPI_Comm_size(MPI_COMM_WORLD, &nprocs);
+    while (1) {
+        if (myid == 0) {
+            printf("Digite o número de intervalos: (0 para sair) ");
+            scanf("%d", &n);
+        }
 
-    // Obtém o rank do processo atual:
-    int procid = 0;
-    MPI_Comm_rank(MPI_COMM_WORLD, &procid);
+        MPI_Bcast(&n, 1, MPI_INT, 0, MPI_COMM_WORLD);
+        if (n == 0)
+            break;
 
-    // Obtém o nome do processador atual:
-    int tamanho_max_nome = MPI_MAX_PROCESSOR_NAME;
-    char nome_do_processo[tamanho_max_nome];
-    MPI_Get_processor_name(nome_do_processo, &tamanho_max_nome);
+        h = 1.0 / (double)n;
+        sum = 0.0;
+        for (i = myid + 1; i <= n; i += numprocs) {
+            x = h * ((double)i - 0.5);
+            sum += (4.0 / (1.0 + x * x));
+        }
+        mypi = h * sum;
+        MPI_Reduce(&mypi, &pi, 1, MPI_DOUBLE, MPI_SUM, 0, MPI_COMM_WORLD);
+        if (myid == 0)
+            printf("Pi é aproximadamente %.16f, Margem de erro %.16f\n", pi, fabs(pi - PI25DT));
+    }
 
-    // Imprime um "Olá, mundo!":
-    printf("Olá, mundo! Eu sou o processador %2d em %s, de um total de %2d processadores.\n",
-           procid, nome_do_processo, nprocs);
-
-    // Finaliza o ambiente MPI:
     MPI_Finalize();
-
-    // Retorna
     return 0;
 }
