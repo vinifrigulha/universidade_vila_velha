@@ -69,4 +69,6 @@ A responsividade funciona bem em dispositivos mais largos, como o Ipad e em tela
 
 # 4 - Link do GitHub
 
+[Entrega 1 - Teste de Software](https://github.com/Fisaq/universidade_vila_velha/edit/main/Qualidade%20de%20Software/Entrega%2001.md)
+
 [Entrega 2 - Teste de Software](https://github.com/Fisaq/universidade_vila_velha/edit/main/Qualidade%20de%20Software/Entrega%2002.md)
