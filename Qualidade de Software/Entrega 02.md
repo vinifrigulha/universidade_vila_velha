@@ -2,13 +2,17 @@
 
 ## RF01: Fazer Pedido
 
-### Cenário de Teste 01: Selecioner Itens do Menu
+### Cenário de Teste 01: Selecioner Itens do Menu e Adicionais
 
-* CT 01: [Botões de adicionar item] [Quantidade alterada com sucesso]
-* CT 02: [Botões de adicionar item] [Subtotal não alterado]
-* CT 02: [Botão fechar pedido] [Não funciona mesmo preenchendo todos os campos exigidos]
+* CT 01: [Clicar no botão "+" para acrescentar adicionais] [Quantidade de itens alterada com sucesso]
+* CT 02: [Clicar no botão "+" para acrescentar adicionais] [Valor subtotal não atualizado]
+* CT 03: [Apertar sucessivas vezes o botão "+"] [Permite um máximo de 20 itens adicionais, impossibilitando mais acréscimos]
+* CT 04: [Clicar no botão "Fechar pedido" fora do horário comercial] [Nada acontece ao clicar]
+* CT 05: [Clicar no botão "Fechar pedido" dentro do horário comercial] [Pedido adicionado ao carrinho com sucesso]
 
 **OBS**: Aparentemente o horário de testagem influencia no funcionamento do sistema, tendo em vista que a hamburgueria só funciona de noite. Entretanto isso não fica tão evidente para o usuário do site. Deveria haver um retorno de mensagem para o usuário informando que não é possível realizar pedidos durante o dia.
+
+<img src="https://github.com/Fisaq/universidade_vila_velha/assets/95030412/14e0e7b8-5a3d-4605-816e-35ce54dc2c91"  alt="Imagem Exemplo" width=700>
 
 ## RF02: Barra de Pesquisa
 
