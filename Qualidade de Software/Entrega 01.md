@@ -12,7 +12,6 @@ Este documento tem como objetivo testar o funcionamento da plataforma de pedidos
 Com este documento será possível:
 
 * Identificar os componentes de software que devem ser testados.
-* Prover uma estimativa de esforços.
 * Listar os resultados obtidos.
 
 ## 2. Requisitos de Teste
