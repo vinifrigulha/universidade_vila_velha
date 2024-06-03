@@ -36,7 +36,7 @@
 * CT03: [Digitar "a" no campo "Número"] [Não permite a entrada de um tipo caracter]
 * CT04: [Clicar no botão "Cadastrar Endereço"] [Endereço cadastrado com sucesso]
 
-**OBS:** Os mesmos testes foram realizados para se cadastrar outro endereço, pois o sistema de cadastro de endereço possui a maioria dos seus campos como uma lista suspensa, o que limita a entrada do usuário. Entretanto a hamburgueria faz entregas apenas na região 5 de Vila Velha, tornando a opção "Outros" para o cadastro do endereço, desnecessário.
+**OBS:** Os mesmos testes foram realizados para se cadastrar outro endereço, pois o sistema de cadastro de endereço possui a maioria dos seus campos como uma lista suspensa, o que limita a entrada do usuário.
 
 ## RNF01: Compatibilidade em Navegadores
 
