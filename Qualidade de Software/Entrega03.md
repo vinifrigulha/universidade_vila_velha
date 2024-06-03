@@ -18,8 +18,6 @@
 
 **OBS:** Apesar do valor de subtotal ser alterado diretamente no botão "Fazer Pedido", o mesmo comportamento não se aplica para o preço do pedido posicionado acima, o que não é um erro necessariamente, mas como este valor está em um tamanho maior, poderia ser atualizado em tempo real e não apenas uma imagem estática.
 
-### Imagens de Exemplo
-
 
 ## 2 - Componentes
 
