@@ -12,8 +12,6 @@
 
 **OBS**: Aparentemente o horário de testagem influencia no funcionamento do sistema, tendo em vista que a hamburgueria só funciona de noite. Entretanto isso não fica tão evidente para o usuário do site. Deveria haver um retorno de mensagem para o usuário informando que não é possível realizar pedidos durante o dia.
 
-<img src="https://github.com/Fisaq/universidade_vila_velha/assets/95030412/14e0e7b8-5a3d-4605-816e-35ce54dc2c91"  alt="Imagem Exemplo" width=700>
-
 ## RF002: Barra de Pesquisa
 
 ### Cenário de Teste 01: Pesquisar cardápio
