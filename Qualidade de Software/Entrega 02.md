@@ -38,7 +38,9 @@
 
 **OBS:** Os mesmos testes foram realizados para se cadastrar outro endereço, pois o sistema de cadastro de endereço possui a maioria dos seus campos como uma lista suspensa, o que limita a entrada do usuário.
 
-## RNF01: Compatibilidade em Navegadores
+# 2 - Requisitos Não Funcionais (RNF):
+
+## RNF001: Compatibilidade em Navegadores
 
 ### Cenário de Teste 01: Acessar o site
 
@@ -46,7 +48,7 @@
 * CT02: [Acessar o site pelo navegador Edge]: [Acessado com sucesso]
 * CT03: [Acessar o site pelo navegador Chrome]: [Acessado com sucesso]
 
-## RNF02: Responsividade do site
+## RNF002: Responsividade do site
 
 ### Cenário de Teste 01: Teste de Responsividade em aparelhos diferentes
 
@@ -67,8 +69,10 @@ A responsividade funciona bem em dispositivos mais largos, como o Ipad e em tela
 | ----------------------------- | ------------------------- | ----- | ------------------------------ |
 | Isaque Ferreira de Paula Reis | Gabriela Martins de Jesus | CC5N  | Qualidade e Testes de Software |
 
-# 4 - Link do GitHub
+# 4 - Links para as Outras partes do Documento
 
 [Entrega 1 - Teste de Software](https://github.com/Fisaq/universidade_vila_velha/edit/main/Qualidade%20de%20Software/Entrega%2001.md)
 
 [Entrega 2 - Teste de Software](https://github.com/Fisaq/universidade_vila_velha/edit/main/Qualidade%20de%20Software/Entrega%2002.md)
+
+[Entrega 3 - Teste de Software](https://github.com/Fisaq/universidade_vila_velha/edit/main/Qualidade%20de%20Software/Entrega03.md)
