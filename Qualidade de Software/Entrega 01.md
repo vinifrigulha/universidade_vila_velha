@@ -155,6 +155,139 @@ No entanto, ao pesquisar por itens não mencionados explicitamente na descriçã
 
 ### 3.3 Analisar a funcionalidade do Cadastro de Endereço
 
-O mecanismo de cadastrar endereços do site é bem intolerante a falhas, sendo a maioria dos seus campos implementados como uma lista-suspensa, diminuindo a possibilidade do usuário entrar com algum dado incorreto ou indevido. O botão de cadastrar endereço funciona corretamente e fornece a oportunidade de cadastrar vários endereços
+O mecanismo de cadastrar endereços do site é bem intolerante a falhas, sendo a maioria dos seus campos implementados como uma lista-suspensa, diminuindo a possibilidade do usuário entrar com algum dado incorreto ou indevido. O botão de cadastrar endereço funciona corretamente e fornece a oportunidade de cadastrar vários endereços. Entretanto a hamburgueria faz entregas apenas na região 5 de Vila Velha, tornando a opção "Outros" para o cadastro do endereço, desnecessário.
 
-#
+<br/>
+<table>
+    <tr>
+        <th>
+            Objetivo:
+        </th>
+        <th colspan="4">
+            Testar Funcionalidade do Cadastro de Endereços de Entrega
+        </th>
+    </tr>
+    <tr>
+        <th>
+            Método de Execução:
+        </th>
+        <th colspan="2">
+            Manual (x) 
+        </th>
+        <th colspan="2">
+            Automática ( ) 
+        </th>
+    </tr>
+    <tr>
+        <th>
+            Técnica:
+        </th>
+        <th colspan="2">
+            Teste Estrutural ( )
+        </th>
+        <th colspan="2">
+            Teste Funcional (x)
+        </th>
+    </tr>
+    <tr>
+        <th>
+            Nível de Teste:
+        </th>
+        <th>
+            Integração ( )
+        </th>
+        <th>
+            Sistema ( )
+        </th>
+        <th>
+            Unidade (x)
+        </th>
+    </tr>
+    <tr>
+        <th>
+            Responsável:
+        </th>
+        <th colspan="4">
+            Isaque Ferreira
+        </th>
+    </tr>
+</table>
+
+## 4 - Recursos
+
+Esta seção descreve os recursos de ambiente de teste (hardware e software) necessários para execução dos testes que serão descritos nas subseções que seguem.
+
+### 4.1 - Hardware
+
+<table>
+    <tr>
+        <th>
+        Modelo do Notebook:
+        </th>
+        <th>
+        Acer Nitro 5
+        </th>
+    </tr>
+    <tr>
+        <th>
+        Processador:
+        </th>
+        <th>
+        AMD Ryzen 7 5800H
+        </th>
+    </tr>
+    <tr>
+        <th>
+        Memória RAM:
+        </th>
+        <th>
+        8 GB 
+        </th>
+    </tr>
+</table>
+
+### 4.2 - Software
+
+<table>
+    <tr>
+        <th colspan="3">
+        Sistema Operacional:
+        </th>
+        <th colspan=3>
+        Windows 11 Single Language - 64bits
+        </th>
+    </tr>
+    <tr>
+        <th colspan=3>
+        Navegador(es):
+        </th>
+        <th>
+        Google Chrome (x)
+        </th>
+        <th>
+        Microsoft Edge (x)
+        </th>
+        <th>
+        OperaGX (x)
+        </th>
+    </tr>
+</table>
+
+## 5 - Níveis de Criticidades de Defeito
+
+| Nível de Criticidade | Descrição | Exemplo | Tempo de Resolução |
+|----------------------|-----------|---------|--------------------|
+|GRAV-1 (Crítico) | Defeitos que causam falhas catastróficas no sistema, tornando-o inutilizável. Requerem correção imediata. | Um bug que impede o sistema de iniciar ou processar transações fundamentais. | 2-4 horas
+|GRAV-2 (Alto) | Defeitos que afetam funcionalidades principais, mas não causam a falha total do sistema. Eles devem ser corrigidos com alta prioridade. |  Um bug em um botão de envio de um formulário crítico, mas com uma solução alternativa disponível. | 1 dia
+|GRAV-3 (Médio) | Defeitos que afetam funcionalidades secundárias ou causam inconveniências significativas. Correção é necessária, mas não urgente. | Uma mensagem de erro que não é exibida corretamente, mas não impede a continuidade do trabalho. | 3-5 dias
+|GRAV-4 (Baixo) | Defeitos menores que causam pequenos inconvenientes ou afetam a estética do sistema. Podem ser corrigidos em ciclos de manutenção regulares. | Pequenos erros de formatação ou gráficos desalinhados. | 1 mês
+|GRAV-5 (Trivial) |Defeitos cosméticos que não afetam a funcionalidade ou usabilidade do sistema. São tratados como melhorias e não têm urgência. | Erros tipográficos ou ajustes mínimos de layout. | 2-3 meses
+
+## 6 - Componentes
+
+| Aluno                         | Professora                | Turma | Disciplina                     |
+| ----------------------------- | ------------------------- | ----- | ------------------------------ |
+| Isaque Ferreira de Paula Reis | Gabriela Martins de Jesus | CC5N  | Qualidade e Testes de Software |
+
+[Entrega 1 - Teste de Software](https://github.com/Fisaq/universidade_vila_velha/edit/main/Qualidade%20de%20Software/Entrega%2001.md)
+[Entrega 2 - Teste de Software](https://github.com/Fisaq/universidade_vila_velha/edit/main/Qualidade%20de%20Software/Entrega%2002.md)
