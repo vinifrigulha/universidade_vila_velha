@@ -1,6 +1,6 @@
 # 1 - Requisitos Funcionais (RF):
 
-## RF01: Fazer Pedido
+## RF001: Adicionar itens ao Carrinho de Compras
 
 ### Cenário de Teste 01: Selecioner Itens do Menu e Adicionais
 
@@ -14,25 +14,29 @@
 
 <img src="https://github.com/Fisaq/universidade_vila_velha/assets/95030412/14e0e7b8-5a3d-4605-816e-35ce54dc2c91"  alt="Imagem Exemplo" width=700>
 
-## RF02: Barra de Pesquisa
+## RF002: Barra de Pesquisa
 
 ### Cenário de Teste 01: Pesquisar cardápio
 
-* CT01: [Pesquisar os itens sugeridos na barra] [Itens filtrados com sucesso]
-* CT02: [Pesquisar o nome dos pratos] [Itens filtrados com sucesso]
-* CT03: [Pesquisar o nome das seções] [Não filtra ao pesquisar por Hamburgues, Porções, Franguinho, Bebidas, etc]
-* CT04: [Pesquisar por palavras na descrição do lanche] [Filtra os itens corretamente, até mesmo pelo valor numérico das gramas da carne de hamburguer]
+* CT01: [Digitar o nome "carne"] [Filtrado os itens que contenham carne]
+* CT02: [Digitar o nome "tomate"] [Filtrado os itens que contenham tomate]
+* CT03: [Digitar "150"] [Filtrado os itens que contenham "150" em sua descrição]  
+* CT04: [Digitar "Colossus"] [Item filtrado com sucesso]
+* CT05: [Digitar "Porções"] [Nada filtrado]
+* CT06: [Digitar "Hamburguer"] [Nada filtrado]
+* CT07: [Digitar "Bebidas"] [Nada filtrado]
 
-**OBS:** No geral a barra de pesquisa funciona adequadamente, caso o usuário siga as indicações da mesma. Entretanto ela poderia ser mais inteligente, caso o usuário queira filtrar por seções.
+**OBS:** No geral a barra de pesquisa funciona adequadamente, caso o usuário siga as indicações presentes na mesmas, "filtrar itens por nome ou descrição". Entretanto a pesquisa poderia ser mais precisa, caso o usuário queira filtrar os lanches por seções ou algo do tipo.
 
-## RF03: Cadastrar Endereço
+## RF003: Cadastrar Endereço
 
 ### Cenário de Teste 01: Cadastrar Endereço Vila Velha
 
-* CT01: [Seleção Suspensa] [Cidade selecionada com sucesso]
-* CT02: [Digitar endereço] [Aceita qualquer caractere]
-* CT03: [Digitar números] [Aceita caractere do tipo float]
-* CT04: [Botão cadastrar endereço] [Endereço cadastrado com sucesso]
+* CT01: [Selecionar cidade do menu suspenso] [Cidade selecionada com sucesso]
+* CT02: [Digitar um texto com um endereçõ] [Caracteres aceitos]
+* CT03: [Digitar 10.0 no campo "Número"] [Caracter aceito]
+* CT03: [Digitar "a" no campo "Número"] [Não permite a entrada de um tipo caracter]
+* CT04: [Clicar no botão "Cadastrar Endereço"] [Endereço cadastrado com sucesso]
 
 **OBS:** Os mesmos testes foram realizados para se cadastrar outro endereço, pois o sistema de cadastro de endereço possui a maioria dos seus campos como uma lista suspensa, o que limita a entrada do usuário. Entretanto a hamburgueria faz entregas apenas na região 5 de Vila Velha, tornando a opção "Outros" para o cadastro do endereço, desnecessário.
 
@@ -40,21 +44,24 @@
 
 ### Cenário de Teste 01: Acessar o site
 
-* CT01: [OperaGX]: [Portal acessado com sucesso]
-* CT02: [Edge]: [Portal acessado com sucesso]
-* CT03: [Chrome]: [Portal acessado com sucesso]
+* CT01: [Acessar o site pelo navegador OperaGX]: [Acessado com sucesso]
+* CT02: [Acessar o site pelo navegador Edge]: [Acessado com sucesso]
+* CT03: [Acessar o site pelo navegador Chrome]: [Acessado com sucesso]
 
 ## RNF02: Responsividade do site
 
-### Cenário de Teste 01: Testar em aparelhos diferentes
+### Cenário de Teste 01: Teste de Responsividade em aparelhos diferentes
 
-* CT01: [Desktop]: [Os elementos estão distribuídos adequadamente]
-* CT02: [Iphone SE]: [O site não tem uma boa responsividade, estando os elementos distribuídos de uma má forma]
-* CT03: [Samsung Galaxy S20 Ultra]: [Verticalmente há uma boa distribuição dos elementos, mas não funciona bem na horizontal]
-* CT04: [Iphone 14 Pro Max]: [Verticalmente há uma boa distribuição dos elementos, mas não funciona bem na horizontal]
-* CT05: [Ipad Pro]: [Os elementos estão distribuídos adequadamente]
+* CT01: [Monitor 14 polegadas]: [Os elementos estão distribuídos adequadamente]
+* CT02: [Monitor 21 polegadas]: [Os elementos estão distribuídos adequadamente]
+* CT03: [Iphone SE]: [O site não tem uma boa responsividade, estando os elementos distribuídos de uma má forma]
+* CT04: [Samsung Galaxy S20 Ultra]: [Verticalmente há uma boa distribuição dos elementos, mas não funciona bem na horizontal]
+* CT05: [Iphone 14 Pro Max]: [Verticalmente há uma boa distribuição dos elementos, mas não funciona bem na horizontal]
+* CT06: [Ipad Pro]: [Os elementos estão distribuídos adequadamente]
+* CT07: [Poco X5 5G]: [Os elementos estão distribuídos adequadamente]
 
-**OBS:** A responsividade funciona bem em dispositivos mais largos, como o Ipad e em telas de desktop, porém não possui uma boa distribuição dos elementos em celulares menores horizontalmente.
+**OBS:** Os testes foram realizados utilizando o sistema de proporções do menu Inspencionar do Google Chrome, a não ser pelos testes em monitores e no aparelho Poco X5 5G.
+A responsividade funciona bem em dispositivos mais largos, como o Ipad e em telas de desktop, porém não possui uma boa distribuição dos elementos em celulares menores horizontalmente.
 
 # 3 - Componentes:
 
